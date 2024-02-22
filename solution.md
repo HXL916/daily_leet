@@ -1,15 +1,14 @@
-# Intuition
-<!-- Describe your first thoughts on how to solve this problem. -->
+# Problem
+In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge.
 
-# Approach
-<!-- Describe your approach to solving the problem. -->
+If the town judge exists, then:
 
-# Complexity
-- Time complexity:
-<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+The town judge trusts nobody.
+Everybody (except for the town judge) trusts the town judge.
+There is exactly one person that satisfies properties 1 and 2.
+You are given an array trust where trust[i] = [ai, bi] representing that the person labeled ai trusts the person labeled bi. If a trust relationship does not exist in trust array, then such a trust relationship does not exist.
 
-- Space complexity:
-<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+Return the label of the town judge if the town judge exists and can be identified, or return -1 otherwise.
 
 # Code
 ```
